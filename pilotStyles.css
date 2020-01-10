@@ -5,6 +5,17 @@
 body{
 	margin: 0;
 	overflow: auto;
+	font-family: sans-serif;
+}
+
+button{
+	background-color: red;
+	height: 40px;
+	width: 110px;
+	border: 2px solid white;
+	background-color: transparent;
+	color: white;
+	font-weight: 700;
 }
 
 .nav-top{
@@ -39,6 +50,20 @@ li>span{
 
 ul>img{
 	float: left;
+}
+
+section{
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+
+section>div{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .carouselImg1{
