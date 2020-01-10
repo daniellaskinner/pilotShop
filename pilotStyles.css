@@ -8,9 +8,6 @@ body{
 }
 
 .nav-top{
-	float: left;
-	display: inline-block;
-	overflow: auto;
 	background-color: rgb(220 220 220);
 	width: 100%;
 	color: rgb(160 160 160);
@@ -20,11 +17,14 @@ ul{
 	float: left;
 	display: inline-block;
 	overflow: auto;
+	
 }
 
 li{
 	overflow: auto;
 	display: inline-block;
+	float: right;
+	margin: 10px;
 	
 }
 
@@ -33,7 +33,7 @@ li>span{
 }
 
 .nav-sticky{
-	float: right;
+	float: left;
 	display: inline-block;
 }
 
