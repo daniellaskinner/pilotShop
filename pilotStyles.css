@@ -1,1 +1,46 @@
-this is the css file to add code into
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	overflow: auto;
+}
+
+.nav-top{
+	float: left;
+	display: inline-block;
+	overflow: auto;
+	background-color: rgb(220 220 220);
+	width: 100%;
+	color: rgb(160 160 160);
+}
+
+ul{
+	float: left;
+	display: inline-block;
+	overflow: auto;
+}
+
+li{
+	overflow: auto;
+	display: inline-block;
+	
+}
+
+li>span{
+	float: left;
+}
+
+.nav-sticky{
+	float: right;
+	display: inline-block;
+}
+
+ul>img{
+	float: left;
+}
+
+.carouselImg1{
+	max-width: 100%;
+}
