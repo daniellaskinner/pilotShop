@@ -1,34 +1,42 @@
 *{
 	box-sizing: border-box;
+	margin: 0 auto;
 }
 
 body{
-	margin: 0;
-	overflow: auto;
-	font-family: sans-serif;
+	margin: 0 auto;
+	font-family: sans-serif; /*ubuntu*/
 }
 
 button{
 	background-color: red;
-	height: 40px;
-	width: 110px;
+	height: 50px;
+	width: 145px;
 	border: 2px solid white;
 	background-color: transparent;
 	color: white;
 	font-weight: 700;
+	font-size: 97%;
+	margin-top: 5%;
+	cursor: pointer;
 }
 
-.nav-top{
-	background-color: rgb(220 220 220);
-	width: 100%;
-	color: rgb(160 160 160);
+button:hover{
+	background-color: rgb(88, 158, 194, 1);
+}
+
+h1{
+	font-size: 450%;
+	margin-bottom: 3%;
+	margin-top: -10%;
 }
 
 ul{
-	float: left;
+	/*float: left;*/
 	display: inline-block;
 	overflow: auto;
-	
+	width: 100%;
+	padding: 5px 5px;
 }
 
 li{
@@ -36,20 +44,57 @@ li{
 	display: inline-block;
 	float: right;
 	margin: 10px;
-	
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.nav-top{
+	background-color: rgb(248, 248, 248);
+	width: 100%;
+	color: rgb(160 160 160);
+	height: 50px;
+	font-size: 85%;
+}
+
+.nav-top>li{
+	padding: 30px;
+}
+
+.top-nav-li-bordered{
+	border-right: 1px solid rgb(233, 235, 237);
+	padding-right: 30px;
+}
+
+.nav-sticky{
+	width: 100%;
+	float: left;
+	display: inline-block;
+	padding: 20px;
+}
+
+/*.nav-sticky>ul>li :hover{
+	border: 2px solid black;
+}*/
+
+
+.bordered-button{
+	border: 2px solid black;
 }
 
 li>span{
 	float: left;
+	margin-right: 340px;
 }
 
-.nav-sticky{
-	float: left;
-	display: inline-block;
+.logo{
+	cursor: pointer;
 }
 
 ul>img{
 	float: left;
+	margin-left: 10%;
+	cursor: pointer;
 }
 
 section{
