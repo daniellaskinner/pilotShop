@@ -36,12 +36,10 @@ ul{
 	display: inline-block;
 	overflow: auto;
 	width: 100%;
-	padding: 5px 5px;
 }
 
 li{
 	overflow: auto;
-	display: inline-block;
 	float: right;
 	margin: 10px;
 	font-weight: 700;
@@ -55,6 +53,7 @@ li{
 	color: rgb(160 160 160);
 	height: 50px;
 	font-size: 85%;
+	position: relative;
 }
 
 .nav-top>li{
@@ -70,31 +69,21 @@ li{
 	width: 100%;
 	float: left;
 	display: inline-block;
-	padding: 20px;
+	padding: 2%;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background-color: white;
 }
 
-/*.nav-sticky>ul>li :hover{
-	border: 2px solid black;
-}*/
-
+.nav-sticky>ul>li>img{
+	max-width: 100%;
+	margin-top: -3%;
+}
 
 .bordered-button{
 	border: 2px solid black;
-}
-
-li>span{
-	float: left;
-	margin-right: 340px;
-}
-
-.logo{
-	cursor: pointer;
-}
-
-ul>img{
-	float: left;
-	margin-left: 10%;
-	cursor: pointer;
 }
 
 section{
