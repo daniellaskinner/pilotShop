@@ -8,43 +8,22 @@ body{
 	font-family: sans-serif; /*ubuntu*/
 }
 
-button{
-	background-color: red;
-	height: 50px;
-	width: 145px;
-	border: 2px solid white;
-	background-color: transparent;
-	color: white;
-	font-weight: 700;
-	font-size: 97%;
-	margin-top: 5%;
-	cursor: pointer;
-}
 
-button:hover{
-	background-color: rgb(88, 158, 194, 1);
-}
-
-h1{
-	font-size: 450%;
-	margin-bottom: 3%;
-	margin-top: -10%;
-}
+/*code for nav bars*/
 
 ul{
-	/*float: left;*/
 	display: inline-block;
 	overflow: auto;
-	width: 100%;
+	width: 90%;
 }
 
 li{
 	overflow: auto;
 	float: right;
 	margin: 10px;
-	font-weight: 700;
 	padding: 10px;
 	cursor: pointer;
+	font-weight: 700;
 }
 
 .nav-top{
@@ -58,6 +37,49 @@ li{
 
 .nav-top>li{
 	padding: 30px;
+}
+
+.nav-top>ul>li>form{
+	box sizing: border-box;
+}
+
+.nav-top>ul>li>form>input{
+	background-color: transparent;
+	max-width: 80%;
+	border: none;
+	outline: none;
+	font-size: 100%;
+	font-weight: 700;
+}
+
+.nav-top>ul>li>form>button{
+	background-color: transparent;
+	max-width: 100%;
+	color: rgb(160 160 160);
+	border: none;
+}
+
+.fa-search:before{
+	cursor: pointer;
+}
+
+/*overwriting styling of placeholder text for multiple browswers*/
+
+::-webkit-input-placeholder {
+  color: rgb(160 160 160);
+  font-size: 100%;
+}
+::-moz-placeholder {
+  color: rgb(160 160 160);
+ font-size: 100%;
+}
+:-ms-input-placeholder {
+  color: rgb(160 160 160);
+ font-size: 100%;
+}
+::placeholder {
+  color: rgb(160 160 160);
+ font-size: 100%;
 }
 
 .top-nav-li-bordered{
@@ -86,11 +108,18 @@ li{
 	border: 2px solid black;
 }
 
+
+/*code for carousel section on page*/
+
 section{
   position: relative;
   text-align: center;
   color: white;
   font-weight: 500;
+}
+
+.carouselImg1{
+	max-width: 100%;
 }
 
 section>div{
@@ -100,21 +129,46 @@ section>div{
 	transform: translate(-50%, -50%);
 }
 
-.carouselImg1{
-	max-width: 100%;
+h1{
+	font-size: 450%;
+	margin-bottom: 3%;
+	margin-top: -10%;
 }
 
+.section-button{
+	height: 50px;
+	width: 145px;
+	border: 2px solid white;
+	background-color: transparent;
+	color: white;
+	font-weight: 700;
+	font-size: 97%;
+	margin-top: 5%;
+	cursor: pointer;
+}
+
+.section-button:hover{
+	background-color: rgb(88, 158, 194, 1);
+}
+
+
+/*code for section/container with 3 squares inside*/
+
 .container{
-	border: 5px solid red;
-	width: 80%;
+	border: none;
+	width: 85%;
 	overflow: auto;
 	margin: 10%;
+	margin-top: -14%;
 }
 
 .container>div{
-	border: 5px solid blue;
+	border: none;
 	float: left;
-	
+	position: relative;
+	text-align: center;
+	color: grey;
+	margin: 1%;
 }
 
 .container>div>img{
@@ -123,4 +177,7 @@ section>div{
 	max-width: 100%;
 	max-height: 100%;
 	object-fit: contain;
+	
+	top: 50%;
+	left: 50%;
 }
