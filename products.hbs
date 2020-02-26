@@ -1,0 +1,18 @@
+{{#each products}}
+    <div>
+        <div class="product-img"></div>
+        <div class="sticker discount">{{discount}}</div>
+        <div class="sticker new">New</div>
+        <img src="{{image}}">
+    </div>
+    <div class="product-info">
+        <h2 class="product-name">{{name}}</h2>
+        <div class="product-description">{{desc}}</div>
+        <div class="product-price">From <span class="sale-price">{{price}}</span>
+            <span class="old-price">{{originalPrice}} </span>
+        </div>
+    </div>
+{{/each}}
+
+
+//add an if statement for removing discount tag for ones with no discount data
